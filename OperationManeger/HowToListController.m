@@ -10,7 +10,10 @@
 #import "DetailViewController.h"
 
 @interface HowToListController ()
-
+{
+    NSArray *_operationList;
+    
+}
 @end
 
 @implementation HowToListController
@@ -90,7 +93,7 @@ return _TitileList.count;
           forControlEvents:UIControlEventTouchDown];
         
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-        NSMutableArray *favouriteRist =[userDefaults mutableArrayValueForKey:@"favoriteList"];
+        NSMutableArray *favouriteList =[userDefaults mutableArrayValueForKey:@"favoriteList"];
         
         //    [favouriteRist addObject:self.HowTo];
         //    NSLog(@"favoriteList%@",favouriteRist);
@@ -98,7 +101,7 @@ return _TitileList.count;
         // お気に入りとして登録してあるデータをチェックする。
         // もし、既に登録してあれば、お気に入りから削除して処理を終了
         //（終了というのは、returnの部分です。returnを書くとそれ以降の処理をせずに終了します。）
-        for(NSDictionary *favoriteHowto in favouriteRist){
+        for(NSDictionary *favoriteHowto in favouriteList){
             NSDictionary *howto = self.TitileList[indexPath.row];
             if ([favoriteHowto isEqual:howto]) {
                 //aButton.titleLabel = @"★";
@@ -120,6 +123,49 @@ return _TitileList.count;
     return cell;
 
 
+    
+    
+    
+    
+    //ここから
+    
+//   -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath*)indexpath
+    {
+        static NSString *CellIndentifier=@"Cell";
+        
+        //セルの再利用
+        UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:CellIndentifier];
+        
+        if(cell==nil)
+        {
+            //表示スタイルを決定
+            cell=[[UITableViewCell alloc]
+                  initWithStyle:
+                  UITableViewCellStyleDefault reuseIdentifier:CellIndentifier];
+        }
+        
+        
+        NSLog(@"row:: %@", _operationList[indexPath.row]);
+        NSDictionary *dic = _operationList[indexPath.row];
+        NSLog(@"dict:: %@", dic[@"Name"]);
+        cell.textLabel.text=[NSString stringWithFormat:@"%@", dic[@"Name"]];
+        
+        
+        NSDictionary *how = dic[@"how to"];
+        NSLog(@"content:: %@", how[@"content"]);
+        
+        
+        return cell;
+    }
+
+    
+    //ここまで
+    
+    
+    
+    
+    
+    
 }
     
 

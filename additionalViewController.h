@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface additionalViewController : UIViewController
+@interface additionalViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *additionalList;
+
 
 @end
