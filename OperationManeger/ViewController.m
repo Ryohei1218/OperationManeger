@@ -35,6 +35,9 @@
     
     _operationList=[dic objectForKey:@"OperationList"];
     
+    
+    
+    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

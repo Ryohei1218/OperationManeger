@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A21097919906F1800CCBABE /* OperationList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A21097819906F1800CCBABE /* OperationList.plist */; };
 		4A59EC08199C449900244757 /* additionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59EC07199C449900244757 /* additionalViewController.m */; };
+		4A67D0D3199D97EE0022BBD5 /* Mybutton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A67D0D2199D97EE0022BBD5 /* Mybutton.m */; };
 		4A946AB11993104800B8843C /* HowToListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A946AB01993104800B8843C /* HowToListController.m */; };
 		4A946AB419932D8700B8843C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A946AB319932D8700B8843C /* DetailViewController.m */; };
 		4AC3F490198B317400FB0AE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC3F48F198B317400FB0AE4 /* Foundation.framework */; };
@@ -41,6 +42,8 @@
 		4A21097819906F1800CCBABE /* OperationList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OperationList.plist; sourceTree = "<group>"; };
 		4A59EC06199C449900244757 /* additionalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = additionalViewController.h; path = ../additionalViewController.h; sourceTree = "<group>"; };
 		4A59EC07199C449900244757 /* additionalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = additionalViewController.m; path = ../additionalViewController.m; sourceTree = "<group>"; };
+		4A67D0D1199D97EE0022BBD5 /* Mybutton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mybutton.h; path = ../Mybutton.h; sourceTree = "<group>"; };
+		4A67D0D2199D97EE0022BBD5 /* Mybutton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mybutton.m; path = ../Mybutton.m; sourceTree = "<group>"; };
 		4A946AAF1993104800B8843C /* HowToListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HowToListController.h; sourceTree = "<group>"; };
 		4A946AB01993104800B8843C /* HowToListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HowToListController.m; sourceTree = "<group>"; };
 		4A946AB219932D8700B8843C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 				4A946AB319932D8700B8843C /* DetailViewController.m */,
 				4A59EC06199C449900244757 /* additionalViewController.h */,
 				4A59EC07199C449900244757 /* additionalViewController.m */,
+				4A67D0D1199D97EE0022BBD5 /* Mybutton.h */,
+				4A67D0D2199D97EE0022BBD5 /* Mybutton.m */,
 				4AC3F4A7198B317400FB0AE4 /* Images.xcassets */,
 				4AC3F496198B317400FB0AE4 /* Supporting Files */,
 				4A21097819906F1800CCBABE /* OperationList.plist */,
@@ -269,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A946AB419932D8700B8843C /* DetailViewController.m in Sources */,
+				4A67D0D3199D97EE0022BBD5 /* Mybutton.m in Sources */,
 				4A59EC08199C449900244757 /* additionalViewController.m in Sources */,
 				4AC3F4A6198B317400FB0AE4 /* ViewController.m in Sources */,
 				4AC3F4A0198B317400FB0AE4 /* AppDelegate.m in Sources */,

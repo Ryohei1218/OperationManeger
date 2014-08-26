@@ -7,6 +7,19 @@
 //
 
 #import "additionalViewController.h"
+#import <UIKit/UIKit.h>
+
+@interface MyButton : UIButton
+{
+    NSUInteger section;
+    NSUInteger row;
+}
+
+@property (nonatomic, readwrite) NSUInteger section;
+@property (nonatomic, readwrite) NSUInteger row;
+
+@end
+
 
 @interface additionalViewController ()
 
@@ -26,6 +39,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *favouriteRist =[userDefaults mutableArrayValueForKey:@"favoriteList"];
+
     
 }
 
@@ -34,5 +50,6 @@
     [super didReceiveMemoryWarning];
     
 }
+
 
 @end

@@ -7,6 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyButton.h"
+
+//- (IBAction)buttonDidTouchDown:(id)sender {
+//    
+//    MyButton *theButton = (MyButton *)sender;
+//    NSLog(@"Button[%d,%d] was pressed.", theButton.section, theButton.row);
+//}
 
 @interface HowToListController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
@@ -16,6 +23,4 @@
 @property (weak, nonatomic) IBOutlet UITableView *howtoTableView;
 @property (nonatomic,strong) NSDictionary *HowToList;
 @property (nonatomic,strong) NSArray *TitileList;
-@property (weak, nonatomic) IBOutlet UIButton *tapButton;
-
 @end

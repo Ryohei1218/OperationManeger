@@ -16,6 +16,7 @@
 @property (nonatomic,strong) NSDictionary *HowTo;
 @property (nonatomic,strong) NSString *content;
 @property (weak, nonatomic) IBOutlet UITextView *contentTextVew;
+@property (weak, nonatomic) IBOutlet UIButton *tapButton;
 
 
 

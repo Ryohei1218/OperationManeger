@@ -51,6 +51,7 @@
         //今回引っ張りたいキーはHowToList.
         _TitileList = [temp[self.selectnum] objectForKey:@"HowToList"];
         
+        
         //ここでいったん処理終了、実際に表示する部分はcellForRowAtIndexPathにまかせる。
         
         NSLog(@"------------------------------");
@@ -69,32 +70,54 @@ return _TitileList.count;
 }
 
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath*)indexpath
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIndentifier=@"Cell";
+    
+  static NSString *CellIdentifier = @"Cell";
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                       reuseIdentifier:CellIdentifier ];
+        
+        Mybutton *aButton = [[Mybutton alloc] initWithFrame:CGRectMake(10, 8, 30, 30)];
+        aButton.tag = 10000;
+        aButton.backgroundColor = [UIColor blueColor];
+        [aButton addTarget:aButton
+                    action:@selector(buttonDidTouchDown:)
+          forControlEvents:UIControlEventTouchDown];
+        
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        NSMutableArray *favouriteRist =[userDefaults mutableArrayValueForKey:@"favoriteList"];
+        
+        //    [favouriteRist addObject:self.HowTo];
+        //    NSLog(@"favoriteList%@",favouriteRist);
+        
+        // お気に入りとして登録してあるデータをチェックする。
+        // もし、既に登録してあれば、お気に入りから削除して処理を終了
+        //（終了というのは、returnの部分です。returnを書くとそれ以降の処理をせずに終了します。）
+        for(NSDictionary *favoriteHowto in favouriteRist){
+            NSDictionary *howto = self.TitileList[indexPath.row];
+            if ([favoriteHowto isEqual:howto]) {
+                //aButton.titleLabel = @"★";
+                [aButton setTitle:@"★" forState:UIControlStateNormal];
+            }
+        }
+        [cell addSubview:aButton];
+    }
     
 
-//セルの再利用
-UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:CellIndentifier];
-
-if(cell==nil)
-{
-    //表示スタイルを決定
-    cell=[[UITableViewCell alloc]
-          initWithStyle:
-           UITableViewCellStyleDefault reuseIdentifier:CellIndentifier];//_HowToList[indexpath.row]];
-}
-
-    //ViewDidLoadで準備しといたtitlelistを使って実際に名前を引っ張ってくる。
-    //_TitileListはアレイ型、TitleList[0],TitleList[1]はディクショナリー型
-    //キーの名前はName
-    NSString *name = [_TitileList[indexpath.row] objectForKey:@"Name"];
+    Mybutton *theButton = (Mybutton *)[cell viewWithTag:10000];
+   if (theButton) {
+       theButton.section = [indexPath section];
+       theButton.row = [indexPath row];
+       theButton.HowTo = _TitileList[indexPath.row];
+    }
     
-    
-    cell.textLabel.text=[NSString stringWithFormat:name];
-
-
-return cell;
+    cell.textLabel.text = [NSString stringWithFormat:@"%d", [indexPath row]];
+    return cell;
 
 
 }
@@ -110,6 +133,8 @@ return cell;
     
     dvc.selectnum=indexPath.row;
     
+    // セルの選択状態解除
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     //友達リストをDetailViewControllerに渡す
     

@@ -12,16 +12,20 @@
 			<key>HowToList</key>
 			<array>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>1</integer>
 					<key>Name</key>
 					<string>ミラーリング効果</string>
 					<key>Content</key>
 					<string>ミラーリング効果とは、好感を寄せている相手のしぐさ、表情あるいは動作を無意識に真似てしまったり、 自分と同じような仕草や表情を行う相手に好感を抱くような効果のことです。 『ミラー効果』、『同調効果』あるいは『姿勢反響』と呼ばれることもあります。</string>
 				</dict>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>2</integer>
 					<key>Name</key>
 					<string>単純接触効果</string>
 					<key>Content</key>
@@ -38,8 +42,10 @@
 			<key>HowToList</key>
 			<array>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>3</integer>
 					<key>Name</key>
 					<string>フットインザドア</string>
 					<key>Content</key>
@@ -49,8 +55,10 @@
 フットインザドアテクニックは、この心理を交渉に利用したものである。うまく相手の琴線に触れるような規範や価値観(社会的善につながるものであることが多い)を発見できれば、それを足場にかなりの要望を認めてもらうことも可能となる。</string>
 				</dict>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>4</integer>
 					<key>Name</key>
 					<string>ドアインザフェイス</string>
 					<key>Content</key>
@@ -69,8 +77,10 @@
 			<key>HowToList</key>
 			<array>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>5</integer>
 					<key>Name</key>
 					<string>返報性の法則</string>
 					<key>Content</key>
@@ -78,8 +88,10 @@
 『好意の返報性』や『譲歩の返報性』、『自己開示の返報性』などがあります。</string>
 				</dict>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>6</integer>
 					<key>Name</key>
 					<string>ローボールテクニック</string>
 					<key>Content</key>
@@ -97,8 +109,10 @@
 			<key>HowToList</key>
 			<array>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>7</integer>
 					<key>Name</key>
 					<string>二者択一法</string>
 					<key>Content</key>
@@ -106,8 +120,10 @@
 　を前提とした質問を、2者択一の形で選択をさせ、買う選択をする際に相手が断りにくくする方法です。</string>
 				</dict>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>8</integer>
 					<key>Name</key>
 					<string>バックトラッキング</string>
 					<key>Content</key>
@@ -123,16 +139,20 @@
 			<key>HowToList</key>
 			<array>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>9</integer>
 					<key>Name</key>
 					<string>希少性の原理</string>
 					<key>Content</key>
 					<string>希少性の原理とは、いつでも、何処でも手に入るものは価値が低く、数が少ないものは価値が高いと考える、経済・生活行為の中で人間が身に付けている共通認識。常識。</string>
 				</dict>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>10</integer>
 					<key>Name</key>
 					<string>一貫性の法則</string>
 					<key>Content</key>
@@ -148,8 +168,10 @@
 			<key>HowToList</key>
 			<array>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>11</integer>
 					<key>Name</key>
 					<string>第三者話法</string>
 					<key>Content</key>
@@ -164,8 +186,10 @@
 いま、利用していないとすればただちに利用することを考えるべきだろう。</string>
 				</dict>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>12</integer>
 					<key>Name</key>
 					<string>バンドワゴン効果</string>
 					<key>Content</key>
@@ -185,16 +209,20 @@
 			<key>HowToList</key>
 			<array>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>13</integer>
 					<key>Name</key>
 					<string>認知不協和</string>
 					<key>Content</key>
 					<string>認知不協和とは、個人のもつ二つの情報の間に不一致が生じること。その際，不一致を低減する行動が起こる。例えば，愛煙家が喫煙は肺癌の原因になるという情報に接すると，それを否定するか禁煙するかによって不一致を低減しようとする類。</string>
 				</dict>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>14</integer>
 					<key>Name</key>
 					<string>ハロー効果</string>
 					<key>Content</key>
@@ -211,16 +239,20 @@
 			<key>HowToList</key>
 			<array>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>15</integer>
 					<key>Name</key>
 					<string>社会的証明</string>
 					<key>Content</key>
 					<string>社会的証明とは、他人の行動を参考にして自分の行動を決める傾向があります。特に、状況が不明確で自分で判断できないような場合には、周囲の人たちの行動を正しいものと考え、自分がどのように振舞ったらよいかを決める重要な手がかりにします。これを社会的証明の原理という。</string>
 				</dict>
 				<dict>
+					<key>favorite_flag</key>
+					<false/>
 					<key>No</key>
-					<string></string>
+					<integer>16</integer>
 					<key>Name</key>
 					<string>メラビアンの法則</string>
 					<key>Content</key>
