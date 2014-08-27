@@ -62,6 +62,7 @@
         
         self.howtoTableView.delegate = self;
         self.howtoTableView.dataSource = self;
+
         
     }
 
@@ -95,9 +96,6 @@ return _TitileList.count;
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         NSMutableArray *favouriteList =[userDefaults mutableArrayValueForKey:@"favoriteList"];
         
-        //    [favouriteRist addObject:self.HowTo];
-        //    NSLog(@"favoriteList%@",favouriteRist);
-        
         // お気に入りとして登録してあるデータをチェックする。
         // もし、既に登録してあれば、お気に入りから削除して処理を終了
         //（終了というのは、returnの部分です。returnを書くとそれ以降の処理をせずに終了します。）
@@ -119,17 +117,15 @@ return _TitileList.count;
        theButton.HowTo = _TitileList[indexPath.row];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%d", [indexPath row]];
+    NSLog(@"row:: %@", _TitileList[indexPath.row]);
+    NSDictionary *dic = _TitileList[indexPath.row];
+    NSLog(@"dict:: %@", dic[@"Name"]);
+    cell.textLabel.text=[NSString stringWithFormat:@"      %@", dic[@"Name"]];
+    
+    
     return cell;
 
 
-    
-    
-    
-    
-    //ここから
-    
-//   -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath*)indexpath
     {
         static NSString *CellIndentifier=@"Cell";
         
@@ -157,13 +153,6 @@ return _TitileList.count;
         
         return cell;
     }
-
-    
-    //ここまで
-    
-    
-    
-    
     
     
 }

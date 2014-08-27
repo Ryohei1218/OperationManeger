@@ -9,12 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "MyButton.h"
 
-//- (IBAction)buttonDidTouchDown:(id)sender {
-//    
-//    MyButton *theButton = (MyButton *)sender;
-//    NSLog(@"Button[%d,%d] was pressed.", theButton.section, theButton.row);
-//}
-
 @interface HowToListController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property(nonatomic,assign)NSInteger selectnum;
