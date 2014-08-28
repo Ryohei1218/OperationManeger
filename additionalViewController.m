@@ -46,7 +46,9 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSMutableArray *favouriteList =[userDefaults mutableArrayValueForKey:@"favoriteList"];
 
-    _favoriteList = favouriteList.copy;
+    if (favouriteList.count > 0) {
+        _favoriteList = favouriteList.copy;
+    }
     
     
 
@@ -102,8 +104,6 @@ self.additionalList.dataSource = self;
     [super didReceiveMemoryWarning];
     
 }
-
-
 
 
 @end
