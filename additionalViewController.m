@@ -51,8 +51,6 @@
     }
     
     
-
-
 self.additionalList.delegate = self;
 self.additionalList.dataSource = self;
 
